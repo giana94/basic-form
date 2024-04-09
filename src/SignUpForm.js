@@ -24,7 +24,7 @@ export const SignUpForm = () => {
     setEmail(''); 
     setErrorMsg('');
   }
-
+  
 
   const submitForm = (event) => {
     event.preventDefault(); // Prevent form submission if fields are invalid!!
