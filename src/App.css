@@ -1,38 +1,60 @@
-.App {
-  text-align: center;
+body {
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  margin: 3rem;
+  background-color: #e7caec99;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button {
+  font: inherit;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #5a31f4;
+  color: white;
+  border: 1px solid #5a31f4;
+  margin: 0 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button:hover {
+  background-color: #8665ff;
+  border-color: #5a31f4;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+button-highlight {
+  background-color: transparent;
+  color: #8665ff;
+}
+
+button:hover {
+  background-color: #dcd3ff;
+}
+input{
+  padding: 10px;
+}
+
+form{
+  background-color: rgb(243, 245, 246);
+  display: grid;
+  justify-content: space-evenly;
+  border-style: solid;
+  border-color: #002d3d;
+  border-radius: 5%;
+  padding: 50px;
+  gap: 10px; 
+}
+
+.backdrop {
+  position: fixed;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.75);
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+
+.signupform-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
